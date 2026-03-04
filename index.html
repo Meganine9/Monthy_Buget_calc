@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monthly Budget Planner</title>
+<script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+<!-- Application content -->
+<!-- 2. Income Section -->
+<div class="input-group">
+<h3>Monthly Income</h3>
+<input type="number" id="salaryInput" placeholder="Enter salary">
+<button onclick="addSalary()">Add Salary</button>
+</div>
+<!-- Key Points: - Use of type="number" for validation - Unique ID for JavaScript
+reference - Click handler connection -->
+<!-- 3. Expense Categories -->
+<div class="input-group">
+<h3>Monthly Expenses</h3>
+<!-- Housing Expenses -->
+<div class="expense-category">
+<h4>Housing</h4>
+<input type="number" id="rentInput" placeholder="Rent/Mortgage">
+<button onclick="addRent()">Add Rent</button>
+<input type="number" id="utilitiesInput" placeholder="Utilities">
+<button onclick="addUtilities()">Add Utilities</button>
+</div>
+
+<div class="expense-category">
+<h4>Daily living</h4>
+<input type="number" id="groceriesInput" placeholder="Groceries">
+<button onclick="addGroceries()">Add Groceries</button>
+<input type="number" id="transportationInput" placeholder="Transportation">
+<button onclick="addTransportation()">Add Transportation</button>
+</div>
+</div>
+
+<div class="Monthly-Total">
+    <h4>Monthly-Total</h4>
+<p id="totalIncome">Total Income: $0</p>
+<p id="housingExpenses">Housing Expenses: $0</p>
+<p id="livingExpenses">Living Expenses: $0</p>
+<p id="totalExpenses">Total Expenses: $0</p>
+<p id="Budget">Buget for further spending: $0</p>
+</div>
+
+<div class="Yearly projections">
+    <h4>Yearly projections</h4>
+    <p id="yearlyIncome">Yearly income: $0</p>
+    <p id="yearlyExpenses">Yearly Expenses: $0</p>
+    <p id="yearlySavings">Yearly Savings: $0</p>
+</div>
+
+</body>
+</html>
